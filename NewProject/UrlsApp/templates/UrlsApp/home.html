@@ -1,0 +1,10 @@
+{% extends 'UrlsApp/base.html' %}
+{% load UrlsApp.tags %}
+{% block main %}
+
+
+{% autoescape off %}
+{% draw_menu 'подменю_3_уровня' %}
+{% endautoescape %}
+
+{% endblock main %}

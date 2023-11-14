@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru" >
+  <head> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> {{ title }}</title>
+    <meta name="description" content="{{ title }}"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'UrlsApp/css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'UrlsApp/css/style.css'%}">
+    <script src="{% static 'UrlsApp/js/jquery.min.js' %}"></script>
+    <script src="{% static 'UrlsApp/js/bootstrap.bundle.js' %}" charset="utf-8"></script>
+  </head>
+  <body>
+    {% block main %}{% endblock main %}
+  </body>
+
+</html>
