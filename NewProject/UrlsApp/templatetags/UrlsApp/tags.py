@@ -48,29 +48,3 @@ def draw_menu(param:str,):
     else:
         html = '<p> нет такого url </p>'
     return html
-        # for el in url_list:
-        #     structure[count] = {'object':el,'childrens':{}}
-        #     if el.children.all():
-        #         count_j = 1
-        #         for it in el.children.all():
-        #             count_j += 1
-        #             structure[count]['childrens'][f'{count}.{count_j}'] = it 
-# for el in url_list:
-#             if el.sub:
-#             html = f'<p>{el.name}</p>'
-#             if el.children.all():
-#                 for item in el.children.all():
-#                     print(item.children.all())
-                    
-#                     html+=f'__<a href="{item.url}">{item.name}</a><br>'
-# !!!!!!!!
-        # object = my_url.first()
-        # while object.sub:
-        #     count += 1
-        #     structure[count] = url_list.filter(sub=object.sub)
-        #     object = object.sub
-        # sorted_structure = sorted(structure.items(), key=lambda item: item[0])
-
-        # for key,value in sorted_structure[::-1]:
-        #     for item in value.order_by('sub'):
-        #         html +=f'<p>{count-key+1} <a href="{item.url}">{item.name}</a></p>'
